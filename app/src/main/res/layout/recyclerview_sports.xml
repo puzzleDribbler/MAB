@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/textViewName"
+                android:padding="10dp"
+                android:background="@color/colorPrimary"
+                android:text="Cricket"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        <ImageView
+                android:layout_marginRight="5dp"
+                android:id="@+id/imageViewThumbnail"
+                android:layout_below="@id/textViewName"
+                android:layout_width="160dp"
+                android:layout_height="130dp"/>
+
+        <TextView
+                android:id="@+id/textViewDesc"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel ante suscipit, sollicitudin ligula vitae,  "
+                android:layout_toRightOf="@id/imageViewThumbnail"
+                android:layout_below="@id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+
+                android:padding="7dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimaryDark"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+                android:layout_alignLeft="@id/textViewDesc"
+                android:layout_below="@id/textViewDesc"
+                android:text="200 Taka"
+                android:id="@+id/textViewDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:layout_margin="10dp"
+                android:layout_alignTop="@id/textViewDuration"
+                android:id="@+id/textViewBall"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/circle_shape_green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:layout_margin="10dp"
+                android:layout_alignTop="@id/textViewDuration"
+                android:id="@+id/textViewNonBall"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/circle_shape_brown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

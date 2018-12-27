@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_add_sports_news"
+          android:title="Add News"/>
+    <item android:id="@+id/action_add_cam_pic"
+          android:title="Add Pic"/>
+
+    <item android:id="@+id/action_logout"
+          android:title="LOG OUT"
+          android:orderInCategory="100"
+          app:showAsAction="never"/>
+</menu>

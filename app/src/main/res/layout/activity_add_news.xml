@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activities.AddNewsActivity"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+    <ImageView
+            android:background="@drawable/logo"
+            android:layout_width="353dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_height="70dp"
+            android:layout_marginBottom="20dp"
+    />
+
+    <TextView
+            android:id="@+id/tvAddFoodConfirmation"
+            android:text="Lastly added etName n image will show here"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <TextView
+            android:id="@+id/tvAddMoreFood"
+            android:text="Add more food"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <TextView
+            android:id="@+id/tvName"
+            android:text="Food Item Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textStyle="italic"/>
+
+    <EditText
+            android:id="@+id/etName"
+            android:hint="Type a nice name of Food item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:id="@+id/tvDesc"
+            android:text="Description"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:textStyle="italic"/>
+
+
+    <EditText
+            android:id="@+id/etDesc"
+            android:hint="Short and Beautiful Description goes here"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/etDuration" android:hint="Price" android:inputType="number|numberDecimal"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RadioGroup
+                android:id="@+id/radioIsNonBall"
+                android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RadioButton
+                    android:id="@+id/rbBall"
+                    android:text="veg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            <RadioButton
+                    android:id="@+id/rbNonBall"
+                    android:text="non veg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        </RadioGroup>
+    </RelativeLayout>
+
+
+    <TextView
+            android:id="@+id/tvDuration"
+            android:text="Insert a delicious image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textStyle="italic"/>
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+        <Button
+                android:id="@+id/btnUploadImage"
+                android:text="Image"
+                android:background="#345a9b"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        <Button
+                android:id="@+id/btnSave"
+                android:text="Save"
+                android:background="#3a7936"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <ImageView android:id="@+id/imageView"
+               android:layout_width="match_parent"
+               android:layout_height="120dp"/>
+
+</LinearLayout>
